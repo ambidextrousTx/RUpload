@@ -1,3 +1,8 @@
 body {
     background: url("bg.png");
 }
+
+#central-textarea {
+    text-align: center;
+    vertical-align: center;
+}
