@@ -2,7 +2,24 @@ body {
     background: url("bg.png");
 }
 
-#central-textarea {
+.central-textarea {
+    border: 1px;
+    border-style: ridge;
+    margin: 40px 40px 40px 40px;
+    padding: 2px;
+}
+
+.form-area {
     text-align: center;
-    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 2px 2px 2px;
+}
+
+.fancy-button {
+    color: firebrick;
+    background-color: blanchedalmond;
+    font-size: 40px;
+    border-radius: 6px;
+    cursor: pointer;
 }
