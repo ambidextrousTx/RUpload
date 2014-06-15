@@ -5,7 +5,8 @@ body {
 .central-textarea {
     border: 1px;
     border-style: ridge;
-    margin: 40px 40px 40px 40px;
+    border-color: dodgerblue;
+    margin: 100px 100px 100px 100px;
     padding: 2px;
 }
 
@@ -17,9 +18,10 @@ body {
 }
 
 .fancy-button {
-    color: firebrick;
-    background-color: blanchedalmond;
+    color: lightskyblue;
+    background-color: steelblue;
     font-size: 40px;
     border-radius: 6px;
+    border-style: ridge;
     cursor: pointer;
 }
