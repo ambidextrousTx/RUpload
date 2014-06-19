@@ -11,5 +11,11 @@ def hello_world():
 def not_found(error):
     return render_template('error.html'), 404
 
+
+@app.route('/myfile', methods=['POST'])
+def uploaded_file():
+    file_name = request.form['myfile']
+    return 'Received file ' % file_name
+
 if __name__ == '__main__':
     app.run()
