@@ -12,10 +12,11 @@ def not_found(error):
     return render_template('error.html'), 404
 
 
-@app.route('/myfile', methods=['POST'])
+@app.route('/uploaded', methods=['POST'])
 def uploaded_file():
     file_name = request.form['myfile']
-    return 'Received file ' % file_name
+    return 'Received file {0}'.format(file_name)
+
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
