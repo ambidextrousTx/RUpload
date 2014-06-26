@@ -15,7 +15,7 @@ def not_found(error):
 @app.route('/uploaded', methods=['POST'])
 def uploaded_file():
     file_name = request.form['myfile']
-    return 'Received file {0}'.format(file_name)
+    return 'Received file {0} <img src={0} />'.format(file_name)
 
 
 if __name__ == '__main__':
