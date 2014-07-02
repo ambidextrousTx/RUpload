@@ -1,3 +1,4 @@
+import requests
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
@@ -15,7 +16,7 @@ def not_found(error):
 @app.route('/uploaded', methods=['POST'])
 def uploaded_file():
     file_name = request.form['myfile']
-    return 'Received file {0} <img src={0} />'.format(file_name)
+    return requests.get('https://s3.amazonaws.com/RUpload/BaltimoreBoats.JPG').content
 
 
 if __name__ == '__main__':
